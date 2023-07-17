@@ -1,0 +1,22 @@
+// tsconfig.json
+{
+    "compilerOptions": {
+        "allowJs": false,
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "declarationDir": "dist/types",                          
+        "target": "ES5",
+        "module": "ESNext",
+        "moduleResolution": "node",                     
+        "noEmitOnError": true,
+        "lib": ["DOM", "ES5", "ES6", "ES2016", "ES2017", "ES2018", "ESNext"],
+        "strict": true,  
+        "esModuleInterop": false,                 
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "noEmit": true
+    }
+    ,
+    "include": ["./src/**/*.ts"],
+    "exclude": ["**/node_modules", "**/build", "**/dist", "**/*.md", "**/rollup.config.js"]
+}

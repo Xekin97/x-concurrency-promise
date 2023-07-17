@@ -1,0 +1,30 @@
+{
+	"name": "x-concurrency-promise",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/index.js",
+	"module": "dist/index.es.js",
+	"types": "dist/types/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "rm -rf ./dist && rollup -c rollup.config.js"
+	},
+	"keywords": [
+		"concurrency",
+		"promise",
+		"upload",
+		"request",
+		"typescript"
+	],
+	"author": "xekin",
+	"license": "ISC",
+	"devDependencies": {
+		"@rollup/plugin-typescript": "^11.1.2",
+		"@types/lodash-es": "^4.17.8",
+		"jest": "^29.6.1",
+		"tslib": "^2.6.0",
+		"typescript": "^5.1.6"
+	}
+}
